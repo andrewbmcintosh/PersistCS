@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Restaurant(models.Model):
-    restaurant_id = models.AutoField(primary_key=True)
+    # restaurant_id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=100)
     # weekly_expected = models.CharField(max_length=100)
     # weekly_actual = models.CharField(max_length=100)
@@ -15,7 +15,7 @@ class Restaurant(models.Model):
 class Worker(models.Model):
     restaurant_id = models.ForeignKey(
         Restaurant, on_delete=models.CASCADE, related_name='worker')
-    worker_id = models.AutoField(primary_key=True)
+    # worker_id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=100)
     job_title = models.CharField(max_length=100)
     total_hours = models.CharField(max_length=100)
@@ -24,7 +24,7 @@ class Worker(models.Model):
 
 
 class TimeSheet(models.Model):
-    time_sheet_id = models.AutoField(primary_key=True)
+    # time_sheet_id = models.AutoField(primary_key=True)
     time_sheet_pos_id = models.CharField(max_length=100)
     worker_id = models.ForeignKey(
         Worker, on_delete=models.CASCADE, related_name='timesheet')

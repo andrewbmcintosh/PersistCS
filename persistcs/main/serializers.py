@@ -11,7 +11,6 @@ class RestaurantSerializer(serializers.ModelSerializer):
 
 
 class TimeSheetSerializer(serializers.ModelSerializer):
-
     class Meta:
         model = TimeSheet
         fields = '__all__'
