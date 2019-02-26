@@ -12,11 +12,10 @@ class TimeSheetSerializer(serializers.ModelSerializer):
 class WorkerSerializer(serializers.ModelSerializer):
     worker_timesheet = TimeSheetSerializer(many=True)
 
-
-class Meta:
-    model = Worker
-    fields = ("id", "restaurant", "job_title", "total_hours",
-              "total_tip", "total_sales", "worker_timesheet")
+    class Meta:
+        model = Worker
+        fields = ("id", "restaurant", "job_title", "total_hours",
+                  "total_tip", "total_sales", "worker_timesheet")
 
 
 class RestaurantSerializer(serializers.ModelSerializer):
