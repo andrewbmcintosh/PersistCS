@@ -21,10 +21,6 @@ class Worker(models.Model):
     total_hours = models.CharField(max_length=100)
     total_tip = models.CharField(max_length=100)
     total_sales = models.CharField(max_length=100)
-    time_Sheets = models.ForeignKey(
-        'TimeSheet',
-        on_delete=models.CASCADE,
-    )
 
 
 class TimeSheet(models.Model):
