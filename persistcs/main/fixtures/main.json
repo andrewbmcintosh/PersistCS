@@ -3,23 +3,245 @@
     "model": "main.restaurant",
     "pk": 1,
     "fields": {
-      "name": "Armin",
-      "email": "something@gmail.com",
-      "message": "I am looking for a Javascript mentor",
-      "created_at": "2018-02-14 00:00:00"
+      "name": "Marietta Pizza Company",
+      "total_sales": "8000",
+      "total_hours": "400"
+    }
+  },
+  {
+    "model": "main.restaurant",
+    "pk": 2,
+    "fields": {
+      "name": "Butcher and the Baker",
+      "total_sales": "14000",
+      "total_hours": "450"
+    }
+  },
+  {
+    "model": "main.restaurant",
+    "pk": 3,
+    "fields": {
+      "name": "Trattoria Centrale",
+      "total_sales": "1300",
+      "total_hours": "400"
     }
   },
   {
     "model": "main.worker",
     "pk": 1,
     "fields": {
-      "worker_id": 1,
-      "name": "chad",
-      "job_title": "server",
-      "total_hours": "55",
+      "restaurant": 2,
+      "name": "Chad",
+      "job_title": "Doorman",
+      "total_hours": "35",
       "total_tip": "800",
-      "total_sales": "2300",
-      "restaurant_id": 3
+      "total_sales": "850"
+    }
+  },
+  {
+    "model": "main.worker",
+    "pk": 2,
+    "fields": {
+      "restaurant": 2,
+      "name": "Darius",
+      "job_title": "Head Chef",
+      "total_hours": "70",
+      "total_tip": "500",
+      "total_sales": "1400"
+    }
+  },
+  {
+    "model": "main.worker",
+    "pk": 3,
+    "fields": {
+      "restaurant": 2,
+      "name": "Chantelle",
+      "job_title": "Hostess",
+      "total_hours": "70",
+      "total_tip": "1200",
+      "total_sales": "2000"
+    }
+  },
+  {
+    "model": "main.worker",
+    "pk": 4,
+    "fields": {
+      "restaurant": 2,
+      "name": "Stacey",
+      "job_title": "server",
+      "total_hours": "40",
+      "total_tip": "700",
+      "total_sales": "900"
+    }
+  },
+  {
+    "model": "main.worker",
+    "pk": 5,
+    "fields": {
+      "restaurant": 2,
+      "name": "Marco",
+      "job_title": "Host",
+      "total_hours": "35",
+      "total_tip": "800",
+      "total_sales": "850"
+    }
+  },
+  {
+    "model": "main.worker",
+    "pk": 6,
+    "fields": {
+      "restaurant": 2,
+      "name": "Matthew",
+      "job_title": "server",
+      "total_hours": "40",
+      "total_tip": "700",
+      "total_sales": "900"
+    }
+  },
+  {
+    "model": "main.timesheet",
+    "pk": 1,
+    "fields": {
+      "time_sheet_pos_id": "35",
+      "worker": 1,
+      "start_time": "8:00",
+      "end_time": "12:00",
+      "hours": "4",
+      "hourly_rate": "8",
+      "declared_tips": "15",
+      "adjusted_tips": "4",
+      "total_tips": "11",
+      "sales": "40"
+    }
+  },
+  {
+    "model": "main.timesheet",
+    "pk": 2,
+    "fields": {
+      "time_sheet_pos_id": "37",
+      "worker": 1,
+      "start_time": "8:30",
+      "end_time": "1:30",
+      "hours": "5",
+      "hourly_rate": "8",
+      "declared_tips": "16",
+      "adjusted_tips": "2",
+      "total_tips": "14",
+      "sales": "50"
+    }
+  },
+  {
+    "model": "main.timesheet",
+    "pk": 3,
+    "fields": {
+      "time_sheet_pos_id": "36",
+      "worker": 2,
+      "start_time": "7:00",
+      "end_time": "11:30",
+      "hours": "4",
+      "hourly_rate": "9",
+      "declared_tips": "10",
+      "adjusted_tips": "3",
+      "total_tips": "7",
+      "sales": "37"
+    }
+  },
+  {
+    "model": "main.timesheet",
+    "pk": 4,
+    "fields": {
+      "time_sheet_pos_id": "38",
+      "worker": 2,
+      "start_time": "8:00",
+      "end_time": "12:00",
+      "hours": "4",
+      "hourly_rate": "8",
+      "declared_tips": "15",
+      "adjusted_tips": "4",
+      "total_tips": "11",
+      "sales": "30"
+    }
+  },
+  {
+    "model": "main.timesheet",
+    "pk": 4,
+    "fields": {
+      "time_sheet_pos_id": "39",
+      "worker": 3,
+      "start_time": "9:15",
+      "end_time": "1:15",
+      "hours": "4",
+      "hourly_rate": "8",
+      "declared_tips": "3",
+      "adjusted_tips": "7",
+      "total_tips": "11",
+      "sales": "60"
+    }
+  },
+  {
+    "model": "main.timesheet",
+    "pk": 4,
+    "fields": {
+      "time_sheet_pos_id": "40",
+      "worker": 4,
+      "start_time": "5:00",
+      "end_time": "9:00",
+      "hours": "4",
+      "hourly_rate": "10",
+      "declared_tips": "23",
+      "adjusted_tips": "4",
+      "total_tips": "19",
+      "sales": "40"
+    }
+  },
+  {
+    "model": "main.timesheet",
+    "pk": 4,
+    "fields": {
+      "time_sheet_pos_id": "41",
+      "worker": 5,
+      "start_time": "10:00",
+      "end_time": "2:00",
+      "hours": "4",
+      "hourly_rate": "10",
+      "declared_tips": "15",
+      "adjusted_tips": "11",
+      "total_tips": "11",
+      "sales": "30"
+    }
+  },
+  {
+    "model": "main.timesheet",
+    "pk": 4,
+    "fields": {
+      "time_sheet_pos_id": "42",
+      "worker": 6,
+      "start_time": "1:00",
+      "end_time": "5:00",
+      "hours": "4",
+      "hourly_rate": "5",
+      "declared_tips": "15",
+      "adjusted_tips": "4",
+      "total_tips": "11",
+      "sales": "30"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$120000$nNYnxIE3eqsv$RSikGSl5ETIuDqr5yEAzhq8XHipxdl5EWtXFyVKlPeo=",
+      "last_login": "2019-02-26T17:19:57.343Z",
+      "is_superuser": true,
+      "username": "andrewmcintosh",
+      "first_name": "",
+      "last_name": "",
+      "email": "abmcintosh7@gmail.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2019-02-26T17:19:47.519Z",
+      "groups": [],
+      "user_permissions": []
     }
   }
 ]
