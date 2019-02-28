@@ -15,6 +15,8 @@ For this project I wanted to something different and see what it is like to work
 
 Talking with the client. Researching Gmail API. Creating a csv "parser"
 
+![ERD](https://i.imgur.com/QsByw99.png)
+
 ## Version 2
 
 I would like to create the methods that will automatically input the data into the database and then add user Authentication.
