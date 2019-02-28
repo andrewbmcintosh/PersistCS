@@ -10,7 +10,7 @@ export class ClientData extends Component {
   render() {
     return (
       <div>
-        <h3>Im the Client Data Component</h3>
+        <h3>Client Data</h3>
         {this.props.clientData.map(clientData => (
           <div key={clientData.id}>
             <Restaurant clientData={clientData} />

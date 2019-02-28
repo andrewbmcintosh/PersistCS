@@ -5,7 +5,7 @@ export class DashboardCS extends Component {
   render() {
     return (
       <div>
-        <h1>Im the Dashboard</h1>
+        <h1>Dashboard</h1>
         <ClientData />
       </div>
     );
