@@ -1,9 +1,16 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import ReactDOM from "react-dom";
+
+import { Provider } from "react-redux";
+import store from "../store";
 
 class App extends Component {
   render() {
-    return <h1>Persist CS</h1>;
+    return (
+      <Provider store={store}>
+        <Fragment>PersistCS</Fragment>
+      </Provider>
+    );
   }
 }
 
