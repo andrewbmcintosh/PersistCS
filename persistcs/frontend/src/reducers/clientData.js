@@ -1,7 +1,7 @@
 import {
   GET_CLIENTDATA,
   DELETE_CLIENTDATA,
-  ADD_LEAD
+  ADD_CLIENTDATA
 } from "../actions/types.js";
 
 const initialState = {
@@ -16,5 +16,18 @@ export default function(state = initialState, action) {
         clientData: action.payload
       };
     case DELETE_CLIENTDATA:
+      return {
+        ...state,
+        clientData: state.clientData.filter(
+          clientData => clientData.id !== action.payload
+        )
+      };
+    case ADD_CLIENTDATA:
+      return {
+        ...state,
+        clientData: [...state.clientData, action.payload]
+      };
+    default:
+      return state;
   }
 }
