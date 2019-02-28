@@ -3,12 +3,15 @@ import ReactDOM from "react-dom";
 
 import { Provider } from "react-redux";
 import store from "../store";
+import DashboardCS from "./clientData/DashboardCS";
 
 class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <Fragment>PersistCS</Fragment>
+        <div className="container">
+          <DashboardCS />
+        </div>
       </Provider>
     );
   }
